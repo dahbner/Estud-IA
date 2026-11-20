@@ -1,0 +1,10 @@
+package org.ucb.iaestudio.di
+
+import org.koin.core.module.Module
+
+fun sharedModule(): List<Module> = listOf(
+    platformModule(),
+    dataModule,
+    presentationModule,
+    domainModule
+)
